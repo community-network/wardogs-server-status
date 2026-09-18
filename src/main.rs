@@ -107,7 +107,7 @@ async fn status(ctx: Context, statics: &Static) -> Result<()> {
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
     log::set_max_level(log::LevelFilter::Info);
-    flexi_logger::Logger::try_with_str("warn,discord_bot=info")
+    flexi_logger::Logger::try_with_str("warn,wardogs-server-status=info")
         .unwrap_or_else(|e| panic!("Logger initialization failed with {:#?}", e))
         .start()?;
 
