@@ -23,11 +23,11 @@ jobs:
       matrix:
         include:
           - os: ubuntu-latest
-            extra: LICENSE,Readme.md,start.sh
+            extra: LICENSE,README.md,start.sh
           - os: macos-latest
-            extra: LICENSE,Readme.md,start.sh
+            extra: LICENSE,README.md,start.sh
           - os: windows-latest
-            extra: LICENSE,Readme.md,start.bat
+            extra: LICENSE,README.md,start.bat
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
