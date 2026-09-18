@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: taiki-e/create-gh-release-action@v1.11
+      - uses: taiki-e/create-gh-release-action@v1.11.0
         with:
           # (required) GitHub token for creating GitHub Releases.
           token: ${{ secrets.GIT_CREDENTIALS }}
